@@ -1,0 +1,210 @@
+{
+ "voice": "hi-IN-SwaraNeural",
+ "rate": "+12%",
+ "pitch": "-2Hz",
+ "handle": "@aiwithdevs",
+ "series": "करवा चौथ कथा",
+ "episode": 1,
+ "theme": "night",
+ "scenes": [
+  {
+   "text": "करवा चौथ पर, छलनी से ही चाँद क्यों देखा जाता है?",
+   "highlight": [
+    "छलनी",
+    "चाँद"
+   ],
+   "visual": "none",
+   "chars": [
+    {
+     "id": "veeravati",
+     "pose": "idle",
+     "x": 0.36
+    }
+   ],
+   "props": [
+    {
+     "type": "moonrise",
+     "x": 0.74,
+     "y": 0.22,
+     "scale": 0.7,
+     "behind": true
+    }
+   ]
+  },
+  {
+   "text": "कथा है, सात भाइयों की एक लाड़ली बहन थी, वीरावती।",
+   "highlight": [
+    "सात",
+    "वीरावती।"
+   ],
+   "theme": "royal",
+   "visual": "palace",
+   "chars": [
+    {
+     "id": "brother",
+     "pose": "idle"
+    },
+    {
+     "id": "veeravati",
+     "pose": "idle"
+    },
+    {
+     "id": "brother2",
+     "pose": "idle"
+    }
+   ]
+  },
+  {
+   "text": "शादी के बाद पहला करवा चौथ, वो मायके में थी। शाम तक भूख-प्यास से, वो बेहाल हो गई।",
+   "highlight": [
+    "करवा",
+    "बेहाल"
+   ],
+   "theme": "dawn",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "veeravati",
+     "pose": "sleep"
+    }
+   ],
+   "props": [
+    {
+     "type": "thali",
+     "x": 0.5,
+     "y": 0.42,
+     "scale": 0.9,
+     "behind": true
+    }
+   ]
+  },
+  {
+   "text": "भाइयों से देखा न गया। उन्होंने पेड़ के पीछे दीया जलाकर, छलनी से नकली चाँद दिखा दिया।",
+   "highlight": [
+    "नकली",
+    "चाँद"
+   ],
+   "visual": "none",
+   "chars": [
+    {
+     "id": "brother",
+     "pose": "point",
+     "x": 0.28
+    }
+   ],
+   "props": [
+    {
+     "type": "fakemoon",
+     "x": 0.72,
+     "y": 0.42,
+     "scale": 0.95,
+     "behind": true
+    }
+   ]
+  },
+  {
+   "text": "वीरावती ने व्रत तोड़ा, और तभी खबर आई, उसके पति नहीं रहे।",
+   "highlight": [
+    "व्रत",
+    "पति"
+   ],
+   "theme": "ember",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "veeravati",
+     "pose": "raise",
+     "x": 0.3
+    },
+    {
+     "id": "prince",
+     "pose": "lying",
+     "x": 0.68
+    }
+   ]
+  },
+  {
+   "text": "उसने पूरे साल श्रद्धा से व्रत रखा, और अगले करवा चौथ पर, पति को फिर से जीवन मिला।",
+   "highlight": [
+    "श्रद्धा",
+    "जीवन"
+   ],
+   "theme": "cosmic",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "veeravati",
+     "pose": "pray"
+    },
+    {
+     "id": "prince",
+     "pose": "bless"
+    }
+   ],
+   "props": [
+    {
+     "type": "boon",
+     "x": 0.5,
+     "y": 0.42,
+     "behind": true
+    }
+   ]
+  },
+  {
+   "text": "इसीलिए, असली चाँद को छलनी से देखकर ही, व्रत खोला जाता है।",
+   "highlight": [
+    "असली",
+    "छलनी"
+   ],
+   "visual": "none",
+   "chars": [
+    {
+     "id": "veeravati",
+     "pose": "idle",
+     "x": 0.3
+    },
+    {
+     "id": "prince",
+     "pose": "idle",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "type": "moonrise",
+     "x": 0.5,
+     "y": 0.17,
+     "scale": 0.6,
+     "behind": true
+    },
+    {
+     "type": "diyas",
+     "x": 0.5,
+     "y": 0.6,
+     "scale": 0.8
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "title": "छलनी से चाँद क्यों देखते हैं?",
+  "sub": "वीरावती की कथा",
+  "theme": "night",
+  "chars": [
+   {
+    "id": "veeravati",
+    "pose": "idle",
+    "x": 0.42
+   }
+  ],
+  "props": [
+   {
+    "type": "moonrise",
+    "x": 0.8,
+    "y": 0.42,
+    "scale": 0.55,
+    "behind": true
+   }
+  ]
+ }
+}

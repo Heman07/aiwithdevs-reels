@@ -1,0 +1,34 @@
+name: Post to Instagram
+# Runs every hour; publishes any reel in schedule.json whose post_at time has passed.
+on:
+  schedule:
+    - cron: "5 * * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (1 = don't actually post)"
+        default: "0"
+permissions:
+  contents: write
+concurrency: { group: post, cancel-in-progress: false }
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Post due reels
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          MEDIA_BASE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+          DRY_RUN: ${{ github.event.inputs.dry_run || '0' }}
+        run: python tools/post.py
+      - name: Save posted status
+        run: |
+          if ! git diff --quiet schedule.json; then
+            git config user.name "reels-bot"; git config user.email "reels-bot@users.noreply.github.com"
+            git commit -m "Mark posted reels" schedule.json && git push
+          fi

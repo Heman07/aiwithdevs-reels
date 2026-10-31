@@ -1,0 +1,6 @@
+node_modules/
+out/
+media/
+_still*
+*.tgz
+.DS_Store

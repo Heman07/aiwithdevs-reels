@@ -1,0 +1,194 @@
+{
+ "voice": "hi-IN-MadhurNeural",
+ "rate": "+0%",
+ "pitch": "-6Hz",
+ "handle": "@aiwithdevs",
+ "scenes": [
+  {
+   "text": "कुंभकर्ण छह महीने सोता क्यों था?",
+   "highlight": [
+    "छह",
+    "क्यों"
+   ],
+   "theme": "night",
+   "visual": "moon",
+   "chars": [
+    {
+     "id": "kumbhakarna",
+     "pose": "sleep"
+    }
+   ]
+  },
+  {
+   "text": "उसने ब्रह्मा की कठोर तपस्या की थी।",
+   "highlight": [
+    "तपस्या"
+   ],
+   "visual": "none",
+   "chars": [
+    {
+     "id": "kumbhakarna",
+     "pose": "pray"
+    }
+   ],
+   "props": [
+    {
+     "type": "fire",
+     "x": 0.5,
+     "y": 0.6,
+     "scale": 0.9
+    },
+    {
+     "type": "boon",
+     "x": 0.5,
+     "y": 0.4,
+     "behind": true,
+     "delay": 40
+    }
+   ]
+  },
+  {
+   "text": "देवता डर गए, वो इंद्रासन माँगने वाला था। यानी इंद्र का सिंहासन।",
+   "highlight": [
+    "इंद्रासन"
+   ],
+   "theme": "royal",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "indra",
+     "pose": "idle"
+    },
+    {
+     "id": "kumbhakarna",
+     "pose": "point"
+    }
+   ],
+   "props": [
+    {
+     "type": "throne",
+     "x": 0.3,
+     "y": 0.46,
+     "scale": 0.95,
+     "behind": true
+    }
+   ]
+  },
+  {
+   "text": "तब देवी सरस्वती, उसकी जीभ पर बैठ गईं।",
+   "highlight": [
+    "सरस्वती",
+    "जीभ"
+   ],
+   "theme": "cosmic",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "saraswati",
+     "pose": "bless"
+    },
+    {
+     "id": "kumbhakarna",
+     "pose": "idle"
+    }
+   ],
+   "props": [
+    {
+     "type": "boon",
+     "x": 0.3,
+     "y": 0.45,
+     "behind": true
+    },
+    {
+     "type": "tongue",
+     "x": 0.8,
+     "y": 0.33
+    }
+   ]
+  },
+  {
+   "text": "और उसके मुँह से निकला, निद्रासन। हमेशा की नींद।",
+   "highlight": [
+    "निद्रासन"
+   ],
+   "theme": "night",
+   "visual": "moon",
+   "chars": [
+    {
+     "id": "brahma",
+     "pose": "bless",
+     "x": 0.27
+    },
+    {
+     "id": "kumbhakarna",
+     "pose": "sleep",
+     "x": 0.7
+    }
+   ],
+   "props": [
+    {
+     "type": "lotusbig",
+     "x": 0.27,
+     "y": 0.6,
+     "scale": 0.7,
+     "behind": true
+    }
+   ]
+  },
+  {
+   "text": "भाई रावण ने विनती की, तब नींद घटकर, छह महीने की हुई।",
+   "highlight": [
+    "रावण",
+    "छह"
+   ],
+   "theme": "royal",
+   "visual": "palace",
+   "chars": [
+    {
+     "id": "ravana",
+     "pose": "pray"
+    },
+    {
+     "id": "brahma",
+     "pose": "bless"
+    }
+   ],
+   "props": [
+    {
+     "type": "boon",
+     "x": 0.72,
+     "y": 0.45,
+     "behind": true
+    }
+   ]
+  }
+ ],
+ "theme": "ember",
+ "cover": {
+  "title": "इंद्रासन बना निद्रासन",
+  "sub": "कुंभकर्ण की नींद का राज़",
+  "theme": "cosmic",
+  "chars": [
+   {
+    "id": "saraswati",
+    "pose": "bless",
+    "x": 0.3
+   },
+   {
+    "id": "kumbhakarna",
+    "pose": "idle",
+    "x": 0.7
+   }
+  ],
+  "props": [
+   {
+    "type": "tongue",
+    "x": 0.8,
+    "y": 0.48,
+    "scale": 0.9
+   }
+  ]
+ },
+ "series": "अनसुने किस्से",
+ "episode": 4
+}

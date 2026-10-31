@@ -1,0 +1,177 @@
+{
+ "voice": "hi-IN-SwaraNeural",
+ "rate": "+15%",
+ "pitch": "-2Hz",
+ "handle": "@aiwithdevs",
+ "scenes": [
+  {
+   "text": "शिव तांडव स्तोत्र, किसने रचा था? रावण ने।",
+   "highlight": [
+    "तांडव",
+    "रावण"
+   ],
+   "theme": "ember",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "ravana",
+     "pose": "idle",
+     "prop": "veena"
+    }
+   ],
+   "props": [
+    {
+     "type": "boon",
+     "x": 0.5,
+     "y": 0.42,
+     "behind": true
+    }
+   ]
+  },
+  {
+   "text": "अहंकार में रावण, पूरा कैलाश पर्वत उठाने लगा।",
+   "highlight": [
+    "कैलाश"
+   ],
+   "visual": "none",
+   "chars": [
+    {
+     "id": "ravana",
+     "pose": "raise"
+    }
+   ],
+   "props": [
+    {
+     "type": "kailash",
+     "x": 0.5,
+     "y": 0.19,
+     "scale": 0.85
+    }
+   ]
+  },
+  {
+   "text": "शिव ने बस, अपने पैर का अंगूठा दबाया।",
+   "highlight": [
+    "अंगूठा"
+   ],
+   "theme": "cosmic",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "shiva",
+     "pose": "bless"
+    }
+   ],
+   "props": [
+    {
+     "type": "kailash",
+     "x": 0.5,
+     "y": 0.46,
+     "scale": 1.3,
+     "behind": true
+    }
+   ]
+  },
+  {
+   "text": "रावण पर्वत के नीचे दब गया, और दर्द से चीख पड़ा।",
+   "highlight": [
+    "चीख"
+   ],
+   "theme": "ember",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "ravana",
+     "pose": "fight",
+     "prop": "none"
+    }
+   ],
+   "props": [
+    {
+     "type": "shout",
+     "x": 0.5,
+     "y": 0.33,
+     "behind": true
+    },
+    {
+     "type": "kailash",
+     "x": 0.5,
+     "y": 0.17,
+     "scale": 0.85
+    }
+   ]
+  },
+  {
+   "text": "उसी दर्द में उसने शिव की स्तुति गाई। यही बना, शिव तांडव स्तोत्र।",
+   "highlight": [
+    "स्तुति",
+    "तांडव"
+   ],
+   "theme": "night",
+   "visual": "moon",
+   "chars": [
+    {
+     "id": "ravana",
+     "pose": "idle",
+     "prop": "veena"
+    }
+   ]
+  },
+  {
+   "text": "शिव प्रसन्न हुए, और नाम दिया, रावण। यानी, जिसकी चीख से संसार काँप उठा।",
+   "highlight": [
+    "रावण",
+    "काँप"
+   ],
+   "visual": "none",
+   "chars": [
+    {
+     "id": "shiva",
+     "pose": "bless"
+    },
+    {
+     "id": "ravana",
+     "pose": "pray"
+    }
+   ],
+   "props": [
+    {
+     "type": "boon",
+     "x": 0.3,
+     "y": 0.45,
+     "behind": true
+    },
+    {
+     "type": "shout",
+     "x": 0.72,
+     "y": 0.33,
+     "behind": true,
+     "delay": 30
+    }
+   ]
+  }
+ ],
+ "theme": "himalaya",
+ "cover": {
+  "title": "रावण नाम कैसे पड़ा?",
+  "sub": "शिव तांडव की कथा",
+  "theme": "himalaya",
+  "chars": [
+   {
+    "id": "ravana",
+    "pose": "raise",
+    "x": 0.5
+   }
+  ],
+  "props": [
+   {
+    "type": "kailash",
+    "x": 0.5,
+    "y": 0.5,
+    "scale": 0.6
+   }
+  ]
+ },
+ "series": "अनसुने किस्से",
+ "episode": 6
+}

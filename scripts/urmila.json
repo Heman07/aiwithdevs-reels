@@ -1,0 +1,166 @@
+{
+ "voice": "hi-IN-MadhurNeural",
+ "rate": "+0%",
+ "pitch": "-6Hz",
+ "handle": "@aiwithdevs",
+ "scenes": [
+  {
+   "text": "रामायण का सबसे बड़ा त्याग, सीता का नहीं था।",
+   "highlight": [
+    "त्याग"
+   ],
+   "theme": "dawn",
+   "visual": "lotus",
+   "chars": [
+    {
+     "id": "sita",
+     "pose": "idle"
+    },
+    {
+     "id": "urmila",
+     "pose": "idle"
+    }
+   ]
+  },
+  {
+   "text": "वो था लक्ष्मण की पत्नी, उर्मिला का।",
+   "highlight": [
+    "उर्मिला"
+   ],
+   "theme": "dawn",
+   "visual": "palace",
+   "chars": [
+    {
+     "id": "lakshman",
+     "pose": "idle"
+    },
+    {
+     "id": "urmila",
+     "pose": "pray"
+    }
+   ]
+  },
+  {
+   "text": "वनवास के चौदह साल, लक्ष्मण एक पल भी नहीं सोए।",
+   "highlight": [
+    "चौदह",
+    "सोए"
+   ],
+   "visual": "moon",
+   "chars": [
+    {
+     "id": "rama",
+     "pose": "sleep",
+     "x": 0.44
+    },
+    {
+     "id": "lakshman",
+     "pose": "idle",
+     "x": 0.85
+    }
+   ],
+   "props": []
+  },
+  {
+   "text": "मान्यता है, उन्होंने निद्रा देवी से कहा, मेरी नींद किसी और को दे दो।",
+   "highlight": [
+    "निद्रा",
+    "नींद"
+   ],
+   "theme": "cosmic",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "lakshman",
+     "pose": "pray"
+    },
+    {
+     "id": "nidra",
+     "pose": "bless"
+    }
+   ],
+   "props": [
+    {
+     "type": "boon",
+     "x": 0.72,
+     "y": 0.45,
+     "behind": true
+    }
+   ]
+  },
+  {
+   "text": "और वो नींद ली, उर्मिला ने। पूरे चौदह साल, वो सोती रहीं।",
+   "highlight": [
+    "उर्मिला",
+    "सोती"
+   ],
+   "visual": "moon",
+   "chars": [
+    {
+     "id": "urmila",
+     "pose": "sleep"
+    }
+   ],
+   "props": [
+    {
+     "type": "lotusbig",
+     "x": 0.5,
+     "y": 0.6,
+     "scale": 0.9,
+     "behind": true
+    }
+   ]
+  },
+  {
+   "text": "राम के साथ लक्ष्मण थे, पर लक्ष्मण के साथ थी, उर्मिला।",
+   "highlight": [
+    "उर्मिला"
+   ],
+   "theme": "dawn",
+   "visual": "sun",
+   "chars": [
+    {
+     "id": "rama",
+     "pose": "idle"
+    },
+    {
+     "id": "lakshman",
+     "pose": "bless"
+    },
+    {
+     "id": "urmila",
+     "pose": "pray"
+    }
+   ]
+  }
+ ],
+ "theme": "night",
+ "cover": {
+  "title": "14 साल सोती रही उर्मिला",
+  "sub": "रामायण का सबसे बड़ा त्याग",
+  "theme": "night",
+  "chars": [
+   {
+    "id": "urmila",
+    "pose": "pray",
+    "x": 0.3
+   },
+   {
+    "id": "lakshman",
+    "pose": "idle",
+    "x": 0.7
+   }
+  ],
+  "props": [
+   {
+    "type": "moonrise",
+    "x": 0.5,
+    "y": 0.43,
+    "scale": 0.45,
+    "behind": true
+   }
+  ]
+ },
+ "series": "अनसुने किस्से",
+ "episode": 3
+}

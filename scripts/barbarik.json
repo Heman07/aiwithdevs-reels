@@ -1,0 +1,131 @@
+{
+ "voice": "hi-IN-MadhurNeural",
+ "rate": "+0%",
+ "pitch": "-6Hz",
+ "handle": "@aiwithdevs",
+ "scenes": [
+  {
+   "text": "महाभारत का सबसे ताकतवर योद्धा, न अर्जुन था, न कर्ण।",
+   "visual": "sun",
+   "highlight": [
+    "अर्जुन",
+    "कर्ण"
+   ],
+   "chars": [
+    {
+     "id": "barbarik",
+     "pose": "idle"
+    }
+   ]
+  },
+  {
+   "text": "वो था भीम का पोता, बर्बरीक।",
+   "visual": "mountain",
+   "highlight": [
+    "बर्बरीक"
+   ],
+   "chars": [
+    {
+     "id": "barbarik",
+     "pose": "point"
+    }
+   ]
+  },
+  {
+   "text": "उसके पास थे सिर्फ तीन बाण, जो पूरा युद्ध एक पल में खत्म कर सकते थे।",
+   "visual": "flame",
+   "highlight": [
+    "तीन",
+    "पल"
+   ],
+   "chars": [
+    {
+     "id": "barbarik",
+     "pose": "fight"
+    }
+   ]
+  },
+  {
+   "text": "पर उसका प्रण था, जो हारेगा, वो उसी की तरफ़ से लड़ेगा।",
+   "visual": "swords",
+   "highlight": [
+    "हारेगा"
+   ],
+   "chars": [
+    {
+     "id": "barbarik",
+     "pose": "raise"
+    }
+   ]
+  },
+  {
+   "text": "कृष्ण समझ गए, ऐसे तो युद्ध कभी खत्म ही नहीं होगा।",
+   "visual": "sun",
+   "highlight": [
+    "कृष्ण"
+   ],
+   "chars": [
+    {
+     "id": "krishna",
+     "pose": "idle"
+    }
+   ]
+  },
+  {
+   "text": "उन्होंने दान में माँगा, बर्बरीक का शीश। और उसने हँसकर दे दिया।",
+   "visual": "lotus",
+   "highlight": [
+    "शीश",
+    "हँसकर"
+   ],
+   "chars": [
+    {
+     "id": "krishna",
+     "pose": "point"
+    },
+    {
+     "id": "barbarik",
+     "pose": "pray"
+    }
+   ]
+  },
+  {
+   "text": "आज वही बर्बरीक, खाटू श्याम के नाम से पूजे जाते हैं।",
+   "visual": "palace",
+   "highlight": [
+    "खाटू",
+    "श्याम"
+   ],
+   "chars": [
+    {
+     "id": "barbarik",
+     "pose": "bless"
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "title": "3 बाण में खत्म हो जाता महाभारत",
+  "sub": "बर्बरीक की कथा",
+  "theme": "ember",
+  "chars": [
+   {
+    "id": "barbarik",
+    "pose": "fight",
+    "x": 0.32
+   }
+  ],
+  "props": [
+   {
+    "type": "arrows",
+    "x": 0.55,
+    "y": 0.6,
+    "scale": 0.8,
+    "delay": 48
+   }
+  ]
+ },
+ "series": "अनसुने किस्से",
+ "episode": 2,
+ "theme": "royal"
+}

@@ -1,0 +1,42 @@
+name: Build reels
+# Renders every scheduled reel that isn't on the media site yet, then publishes media to GitHub Pages.
+on:
+  push:
+    branches: [main]
+    paths: ["scripts/**", "schedule.json", "src/**", "public/**", "tts.py", "music.py"]
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Re-render everything (1 = yes)"
+        default: "0"
+permissions:
+  contents: write
+concurrency: { group: build, cancel-in-progress: false }
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      MEDIA_BASE: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+      FORCE: ${{ github.event.inputs.force || '0' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Install
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg fonts-noto-color-emoji
+          pip install -q edge-tts
+          npm ci
+          npx remotion browser ensure
+      - name: Build reels
+        run: python tools/build.py
+      - name: Publish media to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./media
+          publish_branch: gh-pages
+          keep_files: true

@@ -1,0 +1,183 @@
+{
+ "voice": "hi-IN-SwaraNeural",
+ "rate": "+12%",
+ "pitch": "-2Hz",
+ "handle": "@aiwithdevs",
+ "series": "करवा चौथ कथा",
+ "episode": 3,
+ "theme": "forest",
+ "scenes": [
+  {
+   "text": "वो पत्नी, जो यमराज से भी अपने पति के प्राण, वापस ले आई।",
+   "highlight": [
+    "यमराज",
+    "प्राण,"
+   ],
+   "theme": "ember",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "savitri",
+     "pose": "idle",
+     "x": 0.32
+    },
+    {
+     "id": "yama",
+     "pose": "idle",
+     "x": 0.72
+    }
+   ]
+  },
+  {
+   "text": "सावित्री ने सत्यवान से विवाह किया, ये जानते हुए भी, कि उसकी उम्र बस एक साल है।",
+   "highlight": [
+    "सावित्री",
+    "एक",
+    "साल"
+   ],
+   "visual": "none",
+   "chars": [
+    {
+     "id": "savitri",
+     "pose": "pray"
+    },
+    {
+     "id": "satyavan",
+     "pose": "idle"
+    }
+   ]
+  },
+  {
+   "text": "उस दिन जंगल में लकड़ी काटते हुए, सत्यवान गिर पड़े।",
+   "highlight": [
+    "गिर"
+   ],
+   "visual": "none",
+   "chars": [
+    {
+     "id": "satyavan",
+     "pose": "lying",
+     "x": 0.58
+    },
+    {
+     "id": "savitri",
+     "pose": "raise",
+     "x": 0.2
+    }
+   ]
+  },
+  {
+   "text": "यमराज आए, और प्राण लेकर चल दिए। सावित्री, उनके पीछे-पीछे चल पड़ी।",
+   "highlight": [
+    "यमराज",
+    "पीछे-पीछे"
+   ],
+   "theme": "night",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "yama",
+     "pose": "idle",
+     "x": 0.3
+    },
+    {
+     "id": "savitri",
+     "pose": "point",
+     "x": 0.72
+    }
+   ]
+  },
+  {
+   "text": "प्रसन्न होकर यमराज ने वर दिया, और सावित्री ने माँगा, सौ पुत्रों की माँ बनने का वरदान।",
+   "highlight": [
+    "सौ",
+    "पुत्रों"
+   ],
+   "theme": "cosmic",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "yama",
+     "pose": "bless"
+    },
+    {
+     "id": "savitri",
+     "pose": "pray"
+    }
+   ],
+   "props": [
+    {
+     "type": "boon",
+     "x": 0.3,
+     "y": 0.42,
+     "behind": true
+    }
+   ]
+  },
+  {
+   "text": "वचन दे चुके यमराज को, सत्यवान के प्राण लौटाने ही पड़े।",
+   "highlight": [
+    "प्राण",
+    "लौटाने"
+   ],
+   "theme": "dawn",
+   "visual": "sun",
+   "chars": [
+    {
+     "id": "savitri",
+     "pose": "bless"
+    },
+    {
+     "id": "satyavan",
+     "pose": "idle"
+    }
+   ]
+  },
+  {
+   "text": "इसीलिए करवा चौथ की कथाओं में, सावित्री का नाम भी आदर से लिया जाता है।",
+   "highlight": [
+    "सावित्री"
+   ],
+   "theme": "night",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "savitri",
+     "pose": "pray"
+    }
+   ],
+   "props": [
+    {
+     "type": "moonrise",
+     "x": 0.5,
+     "y": 0.17,
+     "scale": 0.6,
+     "behind": true
+    },
+    {
+     "type": "diyas",
+     "x": 0.5,
+     "y": 0.6,
+     "scale": 0.8
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "title": "यमराज से जीत गई पत्नी",
+  "sub": "सावित्री और सत्यवान",
+  "theme": "ember",
+  "chars": [
+   {
+    "id": "savitri",
+    "pose": "point",
+    "x": 0.3
+   },
+   {
+    "id": "yama",
+    "pose": "idle",
+    "x": 0.7
+   }
+  ]
+ }
+}

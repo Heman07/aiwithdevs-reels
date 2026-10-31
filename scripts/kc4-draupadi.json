@@ -1,0 +1,210 @@
+{
+ "voice": "hi-IN-SwaraNeural",
+ "rate": "+12%",
+ "pitch": "-2Hz",
+ "handle": "@aiwithdevs",
+ "series": "करवा चौथ कथा",
+ "episode": 4,
+ "theme": "night",
+ "scenes": [
+  {
+   "text": "क्या आप जानते हैं, द्रौपदी ने भी करवा चौथ का व्रत रखा था?",
+   "highlight": [
+    "द्रौपदी",
+    "करवा"
+   ],
+   "visual": "none",
+   "chars": [
+    {
+     "id": "draupadi",
+     "pose": "idle",
+     "x": 0.35
+    }
+   ],
+   "props": [
+    {
+     "type": "moonrise",
+     "x": 0.74,
+     "y": 0.22,
+     "scale": 0.65,
+     "behind": true
+    }
+   ]
+  },
+  {
+   "text": "अर्जुन तपस्या के लिए नीलगिरि पर्वत पर गए, और पीछे पांडव संकट में घिर गए।",
+   "highlight": [
+    "नीलगिरि",
+    "संकट"
+   ],
+   "theme": "himalaya",
+   "visual": "mountain",
+   "chars": [
+    {
+     "id": "arjuna",
+     "pose": "pray"
+    }
+   ]
+  },
+  {
+   "text": "चिंता में डूबी द्रौपदी ने, श्री कृष्ण को याद किया।",
+   "highlight": [
+    "कृष्ण"
+   ],
+   "theme": "royal",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "draupadi",
+     "pose": "pray"
+    },
+    {
+     "id": "krishna",
+     "pose": "bless"
+    }
+   ],
+   "props": [
+    {
+     "type": "boon",
+     "x": 0.72,
+     "y": 0.42,
+     "behind": true
+    }
+   ]
+  },
+  {
+   "text": "कृष्ण बोले, यही प्रश्न कभी पार्वती ने शिव से पूछा था, और शिव ने बताया था, करवा चौथ का व्रत।",
+   "highlight": [
+    "पार्वती",
+    "शिव",
+    "करवा"
+   ],
+   "theme": "cosmic",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "shiva",
+     "pose": "bless"
+    },
+    {
+     "id": "parvati",
+     "pose": "pray"
+    },
+    {
+     "id": "krishna",
+     "pose": "idle",
+     "prop": "chakra"
+    }
+   ]
+  },
+  {
+   "text": "द्रौपदी ने पूरे विधि-विधान से, ये व्रत रखा।",
+   "highlight": [
+    "विधि-विधान"
+   ],
+   "visual": "none",
+   "chars": [
+    {
+     "id": "draupadi",
+     "pose": "pray",
+     "x": 0.5
+    }
+   ],
+   "props": [
+    {
+     "type": "thali",
+     "x": 0.5,
+     "y": 0.62,
+     "scale": 0.9
+    },
+    {
+     "type": "moonrise",
+     "x": 0.5,
+     "y": 0.15,
+     "scale": 0.55,
+     "behind": true
+    }
+   ]
+  },
+  {
+   "text": "और पांडवों के, सारे संकट दूर हो गए।",
+   "highlight": [
+    "संकट",
+    "दूर"
+   ],
+   "theme": "dawn",
+   "visual": "sun",
+   "chars": [
+    {
+     "id": "arjuna",
+     "pose": "idle"
+    },
+    {
+     "id": "draupadi",
+     "pose": "bless"
+    },
+    {
+     "id": "krishna",
+     "pose": "bless",
+     "prop": "chakra"
+    }
+   ]
+  },
+  {
+   "text": "करवा चौथ, सिर्फ़ एक व्रत नहीं, अटूट विश्वास है।",
+   "highlight": [
+    "अटूट",
+    "विश्वास"
+   ],
+   "visual": "none",
+   "chars": [
+    {
+     "id": "draupadi",
+     "pose": "idle"
+    }
+   ],
+   "props": [
+    {
+     "type": "moonrise",
+     "x": 0.5,
+     "y": 0.15,
+     "scale": 0.55,
+     "behind": true
+    },
+    {
+     "type": "diyas",
+     "x": 0.5,
+     "y": 0.6,
+     "scale": 0.8
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "title": "द्रौपदी का करवा चौथ",
+  "sub": "कृष्ण ने बताया ये व्रत",
+  "theme": "cosmic",
+  "chars": [
+   {
+    "id": "draupadi",
+    "pose": "pray",
+    "x": 0.3
+   },
+   {
+    "id": "krishna",
+    "pose": "bless",
+    "prop": "chakra",
+    "x": 0.7
+   }
+  ],
+  "props": [
+   {
+    "type": "moonrise",
+    "x": 0.5,
+    "y": 0.42,
+    "scale": 0.5,
+    "behind": true
+   }
+  ]
+ }
+}

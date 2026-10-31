@@ -1,0 +1,213 @@
+{
+ "voice": "hi-IN-SwaraNeural",
+ "rate": "+12%",
+ "pitch": "-2Hz",
+ "handle": "@aiwithdevs",
+ "series": "करवा चौथ कथा",
+ "episode": 2,
+ "theme": "dawn",
+ "scenes": [
+  {
+   "text": "करवा चौथ का नाम, एक पतिव्रता स्त्री, करवा से जुड़ा है।",
+   "highlight": [
+    "करवा",
+    "करवा"
+   ],
+   "visual": "none",
+   "chars": [
+    {
+     "id": "karwa",
+     "pose": "idle"
+    }
+   ],
+   "props": [
+    {
+     "type": "diyas",
+     "x": 0.5,
+     "y": 0.6,
+     "scale": 0.8
+    }
+   ]
+  },
+  {
+   "text": "एक दिन नदी में नहाते समय, उसके पति को मगरमच्छ ने पकड़ लिया।",
+   "highlight": [
+    "मगरमच्छ"
+   ],
+   "theme": "ocean",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "prince",
+     "pose": "raise",
+     "x": 0.38
+    }
+   ],
+   "props": [
+    {
+     "type": "crocodile",
+     "x": 0.55,
+     "y": 0.56,
+     "scale": 1.1
+    }
+   ]
+  },
+  {
+   "text": "करवा दौड़ी आई, और कच्चे धागे से, मगरमच्छ को बाँध दिया।",
+   "highlight": [
+    "कच्चे",
+    "धागे"
+   ],
+   "theme": "ocean",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "karwa",
+     "pose": "point",
+     "x": 0.25
+    }
+   ],
+   "props": [
+    {
+     "type": "crocodile",
+     "x": 0.62,
+     "y": 0.56,
+     "scale": 0.9
+    },
+    {
+     "type": "thread",
+     "x": 0.62,
+     "y": 0.54,
+     "delay": 15
+    }
+   ]
+  },
+  {
+   "text": "फिर वो सीधे यमराज के पास पहुँची, और बोली, मेरे पति को जीवनदान दो।",
+   "highlight": [
+    "यमराज",
+    "जीवनदान"
+   ],
+   "theme": "ember",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "karwa",
+     "pose": "pray"
+    },
+    {
+     "id": "yama",
+     "pose": "idle"
+    }
+   ]
+  },
+  {
+   "text": "यमराज ने मना किया, तो करवा बोली, मैं तुम्हें श्राप दे दूँगी।",
+   "highlight": [
+    "श्राप"
+   ],
+   "theme": "ember",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "karwa",
+     "pose": "point"
+    },
+    {
+     "id": "yama",
+     "pose": "idle"
+    }
+   ],
+   "props": [
+    {
+     "type": "shout",
+     "x": 0.3,
+     "y": 0.33,
+     "behind": true
+    }
+   ]
+  },
+  {
+   "text": "पतिव्रता के तेज से डरकर, यमराज ने मगरमच्छ को यमलोक भेजा, और पति को लंबी उम्र दी।",
+   "highlight": [
+    "तेज",
+    "लंबी",
+    "उम्र"
+   ],
+   "theme": "cosmic",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "yama",
+     "pose": "bless"
+    },
+    {
+     "id": "karwa",
+     "pose": "pray"
+    }
+   ],
+   "props": [
+    {
+     "type": "boon",
+     "x": 0.72,
+     "y": 0.42,
+     "behind": true
+    }
+   ]
+  },
+  {
+   "text": "इसीलिए आज भी, करवा माता को याद कर, ये व्रत रखा जाता है। जय करवा माता।",
+   "highlight": [
+    "करवा",
+    "माता।"
+   ],
+   "theme": "night",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "karwa",
+     "pose": "bless"
+    },
+    {
+     "id": "prince",
+     "pose": "idle"
+    }
+   ],
+   "props": [
+    {
+     "type": "moonrise",
+     "x": 0.5,
+     "y": 0.17,
+     "scale": 0.6,
+     "behind": true
+    },
+    {
+     "type": "diyas",
+     "x": 0.5,
+     "y": 0.6,
+     "scale": 0.8
+    }
+   ]
+  }
+ ],
+ "cover": {
+  "title": "मगरमच्छ से भिड़ गई करवा!",
+  "sub": "करवा माता की कथा",
+  "theme": "ocean",
+  "chars": [
+   {
+    "id": "karwa",
+    "pose": "point",
+    "x": 0.28
+   }
+  ],
+  "props": [
+   {
+    "type": "crocodile",
+    "x": 0.68,
+    "y": 0.68,
+    "scale": 1.0
+   }
+  ]
+ }
+}

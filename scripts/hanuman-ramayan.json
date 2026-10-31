@@ -1,0 +1,175 @@
+{
+ "voice": "hi-IN-SwaraNeural",
+ "rate": "+15%",
+ "pitch": "-2Hz",
+ "handle": "@aiwithdevs",
+ "scenes": [
+  {
+   "text": "क्या आप जानते हैं, हनुमान ने भी एक रामायण लिखी थी?",
+   "highlight": [
+    "हनुमान",
+    "रामायण"
+   ],
+   "theme": "dawn",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "hanuman",
+     "pose": "idle",
+     "x": 0.4
+    }
+   ],
+   "props": [
+    {
+     "type": "scroll",
+     "x": 0.78,
+     "y": 0.33,
+     "scale": 0.5
+    }
+   ]
+  },
+  {
+   "text": "कथा है, युद्ध के बाद, हिमालय की चट्टानों पर, अपने नाखूनों से।",
+   "highlight": [
+    "चट्टानों",
+    "नाखूनों"
+   ],
+   "visual": "mountain",
+   "chars": [
+    {
+     "id": "hanuman",
+     "pose": "write",
+     "x": 0.3
+    }
+   ],
+   "props": [
+    {
+     "type": "tablet",
+     "x": 0.7,
+     "y": 0.43,
+     "scale": 0.75,
+     "behind": true
+    }
+   ]
+  },
+  {
+   "text": "जब महर्षि वाल्मीकि ने उसे पढ़ा, तो वो उदास हो गए।",
+   "highlight": [
+    "वाल्मीकि",
+    "उदास"
+   ],
+   "visual": "none",
+   "chars": [
+    {
+     "id": "rishi",
+     "pose": "idle",
+     "x": 0.3
+    }
+   ],
+   "props": [
+    {
+     "type": "tablet",
+     "x": 0.7,
+     "y": 0.43,
+     "scale": 0.75,
+     "behind": true,
+     "delay": -90
+    }
+   ]
+  },
+  {
+   "text": "उन्हें लगा, उनकी रामायण, इसके आगे फीकी पड़ जाएगी।",
+   "highlight": [
+    "फीकी"
+   ],
+   "theme": "forest",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "rishi",
+     "pose": "pray",
+     "x": 0.3
+    }
+   ],
+   "props": [
+    {
+     "type": "scroll",
+     "x": 0.7,
+     "y": 0.42,
+     "scale": 0.7
+    }
+   ]
+  },
+  {
+   "text": "तब हनुमान ने, वो पूरी रामायण, समुद्र में फेंक दी।",
+   "highlight": [
+    "समुद्र"
+   ],
+   "theme": "ocean",
+   "visual": "none",
+   "chars": [
+    {
+     "id": "hanuman",
+     "pose": "raise",
+     "x": 0.33
+    }
+   ],
+   "props": [
+    {
+     "type": "splash",
+     "x": 0.6,
+     "y": 0.55,
+     "scale": 1.1
+    }
+   ]
+  },
+  {
+   "text": "ताकि दुनिया, वाल्मीकि की रामायण पढ़े। ये होती है, सच्ची भक्ति।",
+   "highlight": [
+    "वाल्मीकि",
+    "भक्ति"
+   ],
+   "theme": "dawn",
+   "visual": "sun",
+   "chars": [
+    {
+     "id": "hanuman",
+     "pose": "pray"
+    },
+    {
+     "id": "rama",
+     "pose": "bless"
+    },
+    {
+     "id": "rishi",
+     "pose": "bless"
+    }
+   ]
+  }
+ ],
+ "theme": "himalaya",
+ "cover": {
+  "title": "हनुमान की लिखी रामायण",
+  "sub": "जो समुद्र में फेंक दी गई",
+  "theme": "himalaya",
+  "chars": [
+   {
+    "id": "hanuman",
+    "pose": "write",
+    "x": 0.3
+   }
+  ],
+  "props": [
+   {
+    "type": "tablet",
+    "x": 0.7,
+    "y": 0.62,
+    "scale": 0.65,
+    "behind": true,
+    "delay": -90
+   }
+  ]
+ },
+ "series": "अनसुने किस्से",
+ "episode": 5
+}
