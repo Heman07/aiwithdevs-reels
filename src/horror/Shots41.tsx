@@ -9,7 +9,7 @@ const W = 1080, H = 1920, GOLD = "#f2b544", FIRE = "#ff8a1a", SAFF = "#ff9a2a", 
 const clamp = (v: number) => Math.max(0, Math.min(1, v));
 
 /* Divine / royal figure. weapon: bow | chakra | lotus | flute | none */
-const Figure: React.FC<{ f: number; s?: number; skin?: string; cloth?: string; crown?: boolean; feather?: boolean; weapon?: string; aura?: number; fem?: boolean; drawBow?: number; lie?: boolean }> =
+export const Figure: React.FC<{ f: number; s?: number; skin?: string; cloth?: string; crown?: boolean; feather?: boolean; weapon?: string; aura?: number; fem?: boolean; drawBow?: number; lie?: boolean }> =
   ({ f, s = 1, skin = "#c8906a", cloth = "#e8b020", crown = true, feather, weapon = "none", aura = 0, fem, drawBow = 0, lie }) => (
   <g transform={`scale(${s}) ${lie ? "rotate(-80)" : ""}`}>
     {aura > 0 && <><circle cx={0} cy={-460} r={110} fill={GOLD} opacity={0.25 * aura} /><circle cx={0} cy={-460} r={80} fill="none" stroke={GOLD} strokeWidth={6} opacity={0.8 * aura} /></>}
@@ -41,13 +41,21 @@ const Figure: React.FC<{ f: number; s?: number; skin?: string; cloth?: string; c
       <g><path d="M-40 -360 L-90 -300 L-40 -280" stroke={skin} strokeWidth={16} fill="none" strokeLinecap="round" /><path d="M40 -360 L90 -300 L60 -270" stroke={skin} strokeWidth={16} fill="none" strokeLinecap="round" />{Array.from({ length: 6 }).map((_, i) => <circle key={i} cx={70} cy={-250 + ((f * 4 + i * 40) % 260)} r={10} fill={GOLD} stroke="#a87010" strokeWidth={2} />)}<g transform="translate(-60 -320)">{[-1, 0, 1].map((d) => <path key={d} d={`M0 0 Q${d * 24 - 14} -30 ${d * 18} -50 Q${d * 24 + 14} -30 0 0 Z`} fill="#f07aa0" />)}</g></g>
     ) : weapon === "flute" ? (
       <g><path d="M-40 -360 L20 -430 M40 -360 L60 -440" stroke={skin} strokeWidth={16} strokeLinecap="round" /><path d="M-40 -440 L120 -420" stroke="#8a5a2a" strokeWidth={10} /></g>
+    ) : weapon === "lift" ? (
+      <g><path d="M-40 -360 L-70 -250" stroke={skin} strokeWidth={18} strokeLinecap="round" /><path d="M40 -360 L58 -500 L60 -630" stroke={skin} strokeWidth={18} strokeLinecap="round" fill="none" /><path d="M60 -630 L60 -680" stroke={skin} strokeWidth={8} strokeLinecap="round" /></g>
+    ) : weapon === "gada" ? (
+      <g><path d="M-40 -360 L-70 -250" stroke={skin} strokeWidth={18} strokeLinecap="round" /><path d="M40 -360 L90 -290" stroke={skin} strokeWidth={18} strokeLinecap="round" /><path d="M86 -250 L110 -520" stroke="#8a6a2a" strokeWidth={12} /><circle cx={112} cy={-548} r={42} fill={GOLD} stroke="#a87010" strokeWidth={4} /><path d="M112 -590 L112 -606" stroke={GOLD} strokeWidth={10} /></g>
+    ) : weapon === "pray" ? (
+      <path d="M-40 -360 L-6 -300 L0 -340 M40 -360 L6 -300 L0 -340" stroke={skin} strokeWidth={16} strokeLinecap="round" fill="none" />
+    ) : weapon === "thali" ? (
+      <g><path d="M-40 -360 L30 -320 M40 -360 L90 -330" stroke={skin} strokeWidth={16} strokeLinecap="round" /><ellipse cx={110} cy={-326} rx={74} ry={16} fill={GOLD} stroke="#a87010" strokeWidth={3} /><circle cx={80} cy={-334} r={8} fill="#c0101a" /><path d="M120 -336 Q130 -330 140 -336 L136 -342 L124 -342 Z" fill="#b8541c" /><path d={`M130 -344 Q${126 + Math.sin(f / 3) * 3} -366 130 -380 Q${134 + Math.sin(f / 3) * 3} -366 130 -344`} fill="#ffcf3a" /><circle cx={130} cy={-360} r={26} fill="#ff9a2a" opacity={0.25} /></g>
     ) : (
       <path d="M-40 -360 L-70 -250 M40 -360 L70 -250" stroke={skin} strokeWidth={18} strokeLinecap="round" />
     )}
   </g>
 );
 
-const Asura: React.FC<{ f: number; s?: number; dead?: boolean }> = ({ f, s = 1, dead }) => (
+export const Asura: React.FC<{ f: number; s?: number; dead?: boolean }> = ({ f, s = 1, dead }) => (
   <g transform={`scale(${s}) ${dead ? "rotate(80)" : ""}`}>
     <path d="M-110 0 L-80 -360 L80 -360 L110 0 Z" fill="#2a1a2a" />
     <path d="M-80 -360 L-120 -500 L120 -500 L80 -360 Z" fill="#3a2440" />
@@ -62,7 +70,7 @@ const Asura: React.FC<{ f: number; s?: number; dead?: boolean }> = ({ f, s = 1, 
   </g>
 );
 
-const Snake: React.FC<{ f: number; s?: number; daze?: number }> = ({ f, s = 1, daze = 0 }) => (
+export const Snake: React.FC<{ f: number; s?: number; daze?: number }> = ({ f, s = 1, daze = 0 }) => (
   <g transform={`scale(${s})`}>
     <path d={`M-200 40 C-120 ${-20 + Math.sin(f / 8) * 20} -40 ${80 - Math.sin(f / 8) * 20} 40 20 C90 -20 80 -100 40 -140`} stroke={NAGA} strokeWidth={34} fill="none" strokeLinecap="round" />
     <g transform="translate(40 -170)">
@@ -74,7 +82,7 @@ const Snake: React.FC<{ f: number; s?: number; daze?: number }> = ({ f, s = 1, d
   </g>
 );
 
-const Palace: React.FC<{ f: number; id: string; night?: boolean }> = ({ f, id, night = true }) => (
+export const Palace: React.FC<{ f: number; id: string; night?: boolean }> = ({ f, id, night = true }) => (
   <>
     <Sky top={night ? "#0e1240" : "#f0c080"} bottom={night ? "#3a1a3a" : "#f8e0b0"} id={id} />
     {night && Array.from({ length: 40 }).map((_, i) => <circle key={i} cx={random(`ps${i}`) * W} cy={random(`pt${i}`) * 700} r={1.6} fill="#fff" opacity={0.5} />)}
@@ -278,7 +286,7 @@ const DwDark: React.FC<ShotProps> = ({ f, dur }) => {
   );
 };
 
-const Forest: React.FC<{ f: number; id: string }> = ({ f, id }) => (
+export const Forest: React.FC<{ f: number; id: string }> = ({ f, id }) => (
   <>
     <Sky top="#2a4a2a" bottom="#9ab07a" id={id} />
     {Array.from({ length: 9 }).map((_, i) => <g key={i} transform={`translate(${i * 130 + 10} 1150)`}><rect x={-16} y={-380} width={32} height={380} fill="#4a2a1a" /><circle cx={0} cy={-440 - (i % 3) * 40} r={120} fill={["#1a4a1a", "#2a5a1a", "#2a4a2a"][i % 3]} /></g>)}
@@ -306,7 +314,7 @@ const DwLanka: React.FC<ShotProps> = ({ f }) => (
   </svg>
 );
 
-const Pushpak: React.FC<{ f: number }> = ({ f }) => (
+export const Pushpak: React.FC<{ f: number }> = ({ f }) => (
   <g>
     <path d="M-260 0 Q0 60 260 0 L220 -40 L-220 -40 Z" fill={GOLD} stroke="#a87010" strokeWidth={4} />
     <path d="M-160 -40 L-160 -160 Q0 -260 160 -160 L160 -40 Z" fill="#e8c060" stroke="#a87010" strokeWidth={4} />
@@ -355,7 +363,7 @@ const DwLakshmi: React.FC<ShotProps> = ({ f }) => (
   </svg>
 );
 
-const Rangoli: React.FC<{ f: number; s?: number }> = ({ f, s = 1 }) => (
+export const Rangoli: React.FC<{ f: number; s?: number }> = ({ f, s = 1 }) => (
   <g transform={`scale(${s}) rotate(${f * 0.3})`}>
     {Array.from({ length: 8 }).map((_, i) => <path key={i} transform={`rotate(${i * 45})`} d="M0 0 Q40 -60 0 -140 Q-40 -60 0 0 Z" fill={["#e83a5a", "#ffcf3a", "#2aa86a", "#3a7ad8"][i % 4]} />)}
     {Array.from({ length: 8 }).map((_, i) => <circle key={i} transform={`rotate(${i * 45 + 22})`} cy={-110} r={16} fill="#fff" />)}

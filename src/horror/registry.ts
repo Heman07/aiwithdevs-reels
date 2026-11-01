@@ -39,4 +39,6 @@ import { SHOTS38 } from "./Shots38";
 import { SHOTS39 } from "./Shots39";
 import { SHOTS40 } from "./Shots40";
 import { SHOTS41 } from "./Shots41";
-export const SHOTS = { ...S1, ...SHOTS2, ...SHOTS3, ...SHOTS4, ...SHOTS5, ...SHOTS6, ...SHOTS7, ...SHOTS8, ...SHOTS9, ...SHOTS10, ...SHOTS11, ...SHOTS12, ...SHOTS13, ...SHOTS14, ...SHOTS15, ...SHOTS16, ...SHOTS17, ...SHOTS18, ...SHOTS19, ...SHOTS20, ...SHOTS21, ...SHOTS22, ...SHOTS23, ...SHOTS24, ...SHOTS25, ...SHOTS26, ...SHOTS27, ...SHOTS28, ...SHOTS29, ...SHOTS30, ...SHOTS31, ...SHOTS32, ...SHOTS33, ...SHOTS34, ...SHOTS35, ...SHOTS36, ...SHOTS37, ...SHOTS38, ...SHOTS39, ...SHOTS40, ...SHOTS41 };
+import { SHOTS42 } from "./Shots42";
+import { SHOTS43 } from "./Shots43";
+export const SHOTS = { ...S1, ...SHOTS2, ...SHOTS3, ...SHOTS4, ...SHOTS5, ...SHOTS6, ...SHOTS7, ...SHOTS8, ...SHOTS9, ...SHOTS10, ...SHOTS11, ...SHOTS12, ...SHOTS13, ...SHOTS14, ...SHOTS15, ...SHOTS16, ...SHOTS17, ...SHOTS18, ...SHOTS19, ...SHOTS20, ...SHOTS21, ...SHOTS22, ...SHOTS23, ...SHOTS24, ...SHOTS25, ...SHOTS26, ...SHOTS27, ...SHOTS28, ...SHOTS29, ...SHOTS30, ...SHOTS31, ...SHOTS32, ...SHOTS33, ...SHOTS34, ...SHOTS35, ...SHOTS36, ...SHOTS37, ...SHOTS38, ...SHOTS39, ...SHOTS40, ...SHOTS41, ...SHOTS42, ...SHOTS43 };
